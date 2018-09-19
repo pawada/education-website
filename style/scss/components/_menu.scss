@@ -1,0 +1,43 @@
+.menu {
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: $color-black;
+    }
+
+    
+    &__social-media, &__contact {
+        display: flex;
+    }
+
+    &__icon-box {
+        margin: 0.5rem;
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: $color-white;
+        cursor: pointer;
+        transition: fill 1s;
+
+        &:hover {
+            fill: $color-red;
+        }
+    }
+
+    &__bottom {
+        
+        background-color: rgba($color-black, 0.8);
+        padding: 1rem;
+       position: relative;
+        
+    }
+
+}

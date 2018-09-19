@@ -1,0 +1,14 @@
+{
+  "name": "education-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "compile:sass": "node-sass style/scss/main.scss style/css/style.css -w"
+  },
+  "author": "Adam Pawlowicz",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.1"
+  }
+}
