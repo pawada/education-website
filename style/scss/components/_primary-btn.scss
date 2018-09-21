@@ -1,0 +1,35 @@
+.primary-btn {
+    &,
+    &:link,
+    &:visited {
+        background-color: $color-primary;
+        color: $color-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: $fontsize-default;
+        padding: 1rem 2rem;
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        border: none;
+        margin: 3rem 0;
+        cursor: pointer;
+        transition: all .2s;
+
+        
+    }
+
+    // &:hover {
+    //     background-color: $color-white;
+    //     color: $color-primary;
+    //     transform: translateY(-2px);
+    // }
+    &:active,
+    &:focus {
+        transform: scale(1.1);
+    }
+
+    &--form {
+        width: 100%;
+        margin: 0;
+    }
+
+}

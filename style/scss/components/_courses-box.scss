@@ -1,0 +1,47 @@
+.courses-box {
+    &__offer {
+
+    }
+
+    &__details {
+        position: relative;
+        
+        margin-bottom: 3rem;
+    }
+
+    &__img {
+        
+    }
+
+    &__icons-price {
+       position: absolute;
+       bottom: .5rem;
+       left: 0;
+       width: 100%;
+       padding: 0 1rem;
+
+       display: flex;
+       align-items: center;
+    }
+
+    &__icon {
+        width: 1.2rem;
+        height: 1.3rem;
+        fill: $color-white;
+    }
+
+    &__numbers {
+        font-size: 1.2rem;
+        color: $color-white;
+        margin: 0 .5rem;
+        font-weight: 300;
+
+    }
+
+    &__price {
+        display: block;
+        font-size: 2rem;
+        margin-left: auto;
+        color: $color-white;
+    }
+}

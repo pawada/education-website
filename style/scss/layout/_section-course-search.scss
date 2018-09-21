@@ -1,0 +1,58 @@
+.course-search {
+    background-image: linear-gradient(0deg,
+        rgba($color-background, 0.8),
+        rgba($color-background, 0.8)),
+        url(/img/event-details-img.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+    &__conteiner-details {
+        
+        display: flex;
+        flex-direction: column;
+        padding: 10rem 2rem 2rem;
+    
+    }
+
+    &__header-box {
+        margin-bottom: 3rem;
+    }
+
+    &__offer-container {
+        display: flex;
+        
+    }
+
+    &__offer-box {
+       flex: 0 1 50%;
+    }
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        fill: $color-primary;
+        margin-bottom: 3rem;
+    }
+
+    &__form-container {
+       margin: 7rem 1rem;
+    }
+
+    &__form:not(:last-child) {
+        margin-bottom: .6rem;
+    }
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        padding: 1rem;
+        width: 100%;
+        background-color: $color-white;
+
+        &::-webkit-input-placeholder {
+            color: $text-color;
+        }
+    }
+
+
+}

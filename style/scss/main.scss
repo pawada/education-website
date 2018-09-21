@@ -1,12 +1,18 @@
 
+@import "base/normalize";
 @import "utils/variables";
 @import "base/base";
-
-
 @import "base/typography";
 
+@import "layout/header";
+@import "layout/section-courses";
+@import "layout/section-course-search";
+
 @import "components/menu";
-@import"components/navigation";
+@import "components/navigation";
+@import "components/primary-btn";
+@import "components/feature-box";
+@import "components/courses-box";
 
 
 
