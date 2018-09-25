@@ -1,25 +1,24 @@
 body {
     font-family: $primary-font;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.2;
     color: $text-color;
 }
 
 .heading-primary {
     color: $color-white;
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .heading-secondary {
     font-size: 3.5rem;
     font-weight: 600;
     color: $color-black;
-    line-height: 1.4;
+    line-height: 1.2;
 
-    &--course {
+    &--white {
         color: $color-white;
         font-size: 3rem;
         line-height: 1.2;
@@ -35,26 +34,19 @@ body {
         color: $color-white;
     }
 
-    &--form {
-        text-align: center;
-        padding: 4rem 2rem;
-    }
+    // &--form {
+    //     text-align: center;
+    //     padding: 4rem 2rem;
+    // }
 }
 
 .paragraph {
-    font-size: $fontsize-default;
+    font-size: 1.4rem;
     font-weight: 300;
-    text-align: left;
 
-    &--center {
-        text-align: center;
+    &--white {
+        color: white;
     }
-
-    &--course {
-        font-size: 1.4rem;
-        margin-top: 2rem;
-    }
-
 }
 
 

@@ -1,0 +1,21 @@
+.review {
+
+    padding: 10rem 2rem;
+    background-color: $color-offwhite;
+
+    &__name-stars {
+        display: flex;
+    }
+    
+    &__star {
+      margin-left: 3rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-primary;
+    }
+}

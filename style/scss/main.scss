@@ -3,16 +3,30 @@
 @import "utils/variables";
 @import "base/base";
 @import "base/typography";
+@import "base/utilites";
 
 @import "layout/header";
 @import "layout/section-courses";
 @import "layout/section-course-search";
+@import "layout/section-events";
+@import "layout/section-review";
+@import "layout/section-blog";
+@import "layout/section-view-blog";
+@import "layout/footer";
 
 @import "components/menu";
 @import "components/navigation";
 @import "components/primary-btn";
 @import "components/feature-box";
 @import "components/courses-box";
+@import "components/event-blog";
+@import "components/form";
+
+
+@import "components/sliding_btn";
+
+
+@import "pages/home";
 
 
 

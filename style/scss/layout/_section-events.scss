@@ -1,0 +1,12 @@
+.events {
+    
+    &__header {
+        text-align: center;
+        margin: 4rem 2rem;
+    }
+
+    &__container:last-child {
+        display: none;
+    }
+
+}

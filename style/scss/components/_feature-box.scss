@@ -5,11 +5,15 @@
     padding: 0 2rem;
     background-color: $color-offwhite;
 
+    &__container {
+        margin-top: -6rem;
+    }
+
     &__single {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         background-color: $color-white;
 
         // &:hover {
@@ -20,8 +24,8 @@
     }
 
     &__header {
-        width: 90%;
-        font-size: $fontsize-default;
+        width: 100%;
+        
         padding: 2rem 0;
         background-color: $color-primary;
         color: $color-white;
@@ -29,7 +33,7 @@
 
     &__text {
         padding: 2rem 3rem;
-        font-size: $fontsize-default - .2rem;
+        
         
     }
 

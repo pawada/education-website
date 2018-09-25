@@ -11,7 +11,7 @@
         
         display: flex;
         flex-direction: column;
-        padding: 10rem 2rem 2rem;
+        padding: 10rem 2rem 0;
     
     }
 
@@ -36,22 +36,9 @@
     }
 
     &__form-container {
-       margin: 7rem 1rem;
-    }
-
-    &__form:not(:last-child) {
-        margin-bottom: .6rem;
-    }
-    &__input {
-        font-size: 1.5rem;
-        font-family: inherit;
-        padding: 1rem;
-        width: 100%;
-        background-color: $color-white;
-
-        &::-webkit-input-placeholder {
-            color: $text-color;
-        }
+        padding: 8rem 2rem 10rem;
+        
+        background-color: rgba($color-white, 0.2);
     }
 
 

@@ -1,0 +1,18 @@
+.event-blog {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 2rem;
+
+    &__photo {
+       width: 100%;
+       
+    }
+
+    & .paragraph {
+        a {
+            margin-left: 0.6rem;
+        }
+    }
+
+  
+}

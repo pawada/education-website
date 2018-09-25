@@ -1,14 +1,20 @@
 .header {
-    background-image: linear-gradient(0deg, 
-    rgba($color-background, 0.8), 
-    rgba($color-background, 0.8)), 
-    url(/img/banner-bg.jpg);
+    background-image: linear-gradient(0deg,
+        rgba($color-background, 0.8),
+        rgba($color-background, 0.8)),
+        url(/img/banner-bg.jpg);
     background-size: cover;
     background-position: center;
-    height: 100%;
+   
+    
 
-    &__box {
+    &__heading {
+        padding: 14rem 2rem;
         
-        margin: 4rem 1rem;
     }
+
+
 }
+
+
+

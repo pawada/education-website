@@ -1,5 +1,11 @@
 .menu {
 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+
     &__top {
         display: flex;
         justify-content: space-between;
@@ -8,13 +14,15 @@
         background-color: $color-black;
     }
 
-    
-    &__social-media, &__contact {
+
+    &__social-media,
+    &__contact {
         display: flex;
     }
 
     &__icon-box {
         margin: 0.5rem;
+
         &:not(:last-child) {
             margin-right: 1rem;
         }
@@ -33,11 +41,12 @@
     }
 
     &__bottom {
-        
+
         background-color: rgba($color-black, 0.8);
         padding: 1rem;
-       position: relative;
-        
+        display: flex;
+        justify-content: space-between;
+
     }
 
 }

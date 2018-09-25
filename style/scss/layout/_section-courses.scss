@@ -4,6 +4,20 @@
     margin-bottom: 5rem;
     background-color: $color-offwhite;
 
+    &__header{
+        text-align: center;
+        padding: 3.5rem 0;
+    }
+
+    &__offer {
+        display: flex;
+        flex-direction: column;
+ ;
+    }
+    &__offer > :not(:first-child) {
+        display: none;
+    }
+
     &__box {
         display: flex;
         flex-direction: column;
@@ -11,12 +25,14 @@
 
         text-align: center;
         width: 100%;
-        background-color: $color-white;
+        background-color: $color-white; 
     }
 
+ 
+    }
 
-   &--heading-secondary {
-        margin: 8rem 1rem 1rem;
-   }
+    
 
-}
+
+
+
