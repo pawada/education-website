@@ -1,0 +1,30 @@
+.review {
+
+    display: flex;
+    flex-direction: column;
+    background-color: $color-offwhite;
+
+    @include mq(medium, min) {
+        flex-direction: row;
+    }
+
+    &__content-box:first-child {
+        margin-right: 2.5rem;
+    }
+
+    &__name-stars {
+        display: flex;
+    }
+
+    &__star {
+        margin-left: 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-primary;
+    }
+}

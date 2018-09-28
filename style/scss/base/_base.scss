@@ -7,13 +7,11 @@
 }
 
 html {
-    // This defines what 1rem is
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px
 }
 
 body {
     box-sizing: border-box;
-
 }
 
 li {
@@ -21,8 +19,14 @@ li {
 }
 
 a,
+a:link,
 a:visited {
     text-decoration: none;
     color: inherit;
-    
+    cursor: pointer;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
 }

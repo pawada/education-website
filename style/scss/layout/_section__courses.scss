@@ -1,0 +1,34 @@
+.courses {
+
+    background-color: $color-offwhite;
+
+    &__header {
+        text-align: center;
+        margin: -5rem 0 8rem;
+    }
+
+    &__offer> :not(:first-child) {
+
+        display: none;
+
+        @include mq(large, min) {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    &__offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+ 
+        @include mq(large, min) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+}

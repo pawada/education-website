@@ -1,29 +1,39 @@
 .courses-box {
-    
+
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 22%;
+    margin-bottom: 5rem;
+    overflow: hidden;
+
     &__header {
         text-align: center;
     }
-    
-    &__offer {
-
-    }
 
     &__details {
-        
-        
+        overflow: hidden;
         margin-bottom: 3rem;
     }
 
     &__img {
         width: 100%;
+        height: 100%;
+        transition: all .3s;
+
+        &:hover {
+            @include mq(very-large) {
+                transform: scale(1.1);
+            }
+        }
+
     }
 
     &__icons-price {
-    
         display: flex;
-       align-items: center;
-
-       margin-top: -2.4rem;
+        align-items: center;
+        margin: -2.6rem 1rem 0;
+        position: relative;
+        z-index: 10;
     }
 
     &__icon {
@@ -37,12 +47,12 @@
         color: $color-white;
         margin: 0 .5rem;
         font-weight: 300;
-
     }
 
     &__price {
         display: block;
         font-size: 2rem;
+        font-weight: 600;
         margin-left: auto;
         color: $color-white;
     }

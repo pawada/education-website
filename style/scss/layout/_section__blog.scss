@@ -1,0 +1,33 @@
+.blog {
+
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__container {
+
+        @include mq(medium, min) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        @include mq(very-large, min) {
+            flex-wrap: nowrap;
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+}

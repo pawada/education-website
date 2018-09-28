@@ -5,3 +5,25 @@
 .u-margin-bottom-medium {margin-bottom: 3rem;}
 
 .u-margin-bottom-big {margin-bottom: 4rem;}
+
+.u-section-padding {
+    
+    padding: 10rem 2rem;
+
+    @include mq(small) {
+        padding: 10rem 4rem;
+    }
+
+    @include mq(medium) {
+        padding: 10rem 6rem;
+    }
+
+    @include mq(large) {
+        padding: 10rem 8rem;
+    }
+
+    @include mq(very-large) {
+        padding: 10rem 10rem;
+    }
+    
+}

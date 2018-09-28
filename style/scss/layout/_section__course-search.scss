@@ -1,0 +1,60 @@
+.course-search {
+    background-image: linear-gradient(0deg,
+        rgba($color-background, 0.8),
+        rgba($color-background, 0.8)),
+        url(/img/event-details-img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    @include mq(medium, min) {
+        flex-direction: row;
+    }
+
+    &__conteiner-details {
+        display: flex;
+        flex-direction: column;
+
+        @include mq(very-large) {
+            padding: 0 15rem;
+        }
+
+        @include mq(medium, min) {
+            flex: 2;
+            margin-right: 2rem;
+        }
+    }
+
+    &__header-box {
+        margin-bottom: 3rem;
+    }
+
+    &__offer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__offer-box {
+        flex: 0 1 44%;
+
+        &:first-child {
+            @include mq(very-large) {
+            margin-right: 4rem;
+            }
+        }
+    }
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        fill: $color-primary;
+        margin-bottom: 3rem;
+    }
+
+    &__form-container {
+        padding: 4rem 2rem 10rem;
+        background-color: rgba($color-white, 0.2);
+    }
+
+}

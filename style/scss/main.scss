@@ -1,18 +1,21 @@
 
-@import "base/normalize";
 @import "utils/variables";
+@import "utils/mixins";
+
+@import "base/utilites";
+@import "base/normalize";
 @import "base/base";
 @import "base/typography";
-@import "base/utilites";
 
-@import "layout/header";
-@import "layout/section-courses";
-@import "layout/section-course-search";
-@import "layout/section-events";
-@import "layout/section-review";
-@import "layout/section-blog";
-@import "layout/section-view-blog";
-@import "layout/footer";
+@import "layout/section__header";
+@import "layout/section__courses";
+@import "layout/section__course-search";
+@import "layout/section__events";
+@import "layout/section__review";
+@import "layout/section__blog";
+@import "layout/section__recruitment";
+@import "layout/section__view-blog";
+@import "layout/section__footer";
 
 @import "components/menu";
 @import "components/navigation";
@@ -21,12 +24,10 @@
 @import "components/courses-box";
 @import "components/event-blog";
 @import "components/form";
+@import "components/sliding-btn";
 
 
-@import "components/sliding_btn";
 
-
-@import "pages/home";
 
 
 

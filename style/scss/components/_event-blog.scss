@@ -1,12 +1,56 @@
+////////////////////////////////////////
+// COMMON COMPONENT FOR EVENT & BLOG SECTION
+
 .event-blog {
+
     display: flex;
     flex-direction: column;
-    margin: 7rem 2rem;
+    justify-content: center;
+    align-items: center;
+
+    @include mq(medium) {
+        flex-direction: row;
+    }
+
+    &:first-child {
+
+        @include mq(medium) {
+            margin: 0 0 3rem 0;
+        }
+
+        @include mq(very-large) {
+            margin: 0 4rem 0 0;
+        }
+    }
+
+    &__photo-box {
+        width: 100%;
+        flex: 1;
+    }
 
     &__photo {
-       width: 100%;
-       
+        width: 100%;
+        transition: transform .3s;
+
+        &:hover {
+
+            @include mq(very-large, min) {
+                transform: rotate(-1deg) scale(1.1);
+            }
+        }
     }
+
+    &__contents {
+        align-self: center;
+        max-height: 100%;
+        flex: 1;
+
+        @include mq(medium) {
+            margin-left: 2rem;
+        }
+    }
+
+
 
     & .paragraph {
         a {
@@ -14,5 +58,66 @@
         }
     }
 
-  
+    ////////////////////////////////////////
+    // MODIFICATIONS FOR BLOG SECTION
+
+    &--column {
+
+        @include mq(medium) {
+            flex-direction: column;
+            flex: 0 1 22%;
+            margin-bottom: 3rem;
+        }
+
+    }
+
+    &--column:not(:first-child) {
+        display: none;
+
+        @include mq(medium) {
+            display: flex;
+        }
+    }
+
+    &--column:first-child {
+
+        @include mq(medium) {
+            margin: 0 0 3rem 0;
+        }
+
+    }
+
+    &--column {
+        align-items: flex-start;
+
+        .heading-tertialy {
+            transition: color .3s;
+        }
+    }
+
+    &--column &__photo-box {
+        margin-bottom: 1rem;
+        overflow: hidden;
+    }
+
+    &--column:hover {
+
+        @include mq(very-large) {
+            .event-blog__photo {
+                transform: scale(1.1);
+            }
+
+            .heading-tertialy {
+                color: $color-primary;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
 }

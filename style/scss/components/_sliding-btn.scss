@@ -1,0 +1,41 @@
+ .sliding-btn {
+     font-size: 2rem;
+     text-transform: uppercase;
+     color: $color-primary;
+     width: 4rem;
+     height: 4rem;
+     border-radius: 2rem;
+     background-color: transparent;
+     box-shadow: .5rem .5rem .5rem rgba($color-black, .2);
+     border: 1px solid rgba($color-black, .2);
+     margin-top: 2rem;
+     transition: ease .3s;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     &:active {
+         background-color: $color-primary;
+         color: $color-white;
+     }
+
+     &:hover {
+
+         @include mq (very-large) {
+             background-color: $color-primary;
+             width: 15rem;
+             border-radius: 2rem;
+             overflow: hidden;
+             color: $color-white;
+
+             &> ::before {
+                 content: "details";
+                 text-transform: uppercase;
+                 font-size: $fontsize-default;
+                 margin-right: 1rem;
+             }
+         }
+
+     }
+ }

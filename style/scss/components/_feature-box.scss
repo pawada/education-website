@@ -1,12 +1,16 @@
 .feature {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 0 2rem;
+
     background-color: $color-offwhite;
+    text-align: center;
 
     &__container {
-        margin-top: -6rem;
+        margin: -16rem 0 -15rem;
+        display: flex;
+        flex-direction: column;
+
+        @include mq(very-large) {
+            flex-direction: row;
+        }
     }
 
     &__single {
@@ -14,27 +18,51 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 3rem;
-        background-color: $color-white;
+        transition: color 3s;
 
-        // &:hover {
-        //     &--hover {
-        //         background-color: red;
-        //     }
-        // }
+        @include mq(very-large) {
+            &:not(:last-child) {
+                margin-right: 6rem;
+            }
+        }
+
+        &:hover {
+            @include mq(super-large, min) {
+
+                .feature__header {
+                    background-color: $color-primary;
+                }
+
+                .feature__link {
+                    color: $color-primary;
+                }
+
+            }
+
+        }
+
     }
+
 
     &__header {
         width: 100%;
-        
         padding: 2rem 0;
         background-color: $color-primary;
         color: $color-white;
+        transition: background-color .3s;
+
+        @include mq(very-large) {
+            background-color: rgba($color-white, 0.2);
+        }
+    }
+
+    &__content {
+        background-color: $color-white;
+        box-shadow: 0rem 1rem 3rem 0rem rgba($color-black, .1);
     }
 
     &__text {
         padding: 2rem 3rem;
-        
-        
     }
 
     &__link,
@@ -45,10 +73,12 @@
         color: $color-black;
         font-weight: 700;
         text-decoration: none;
+        outline: none;
+        transition: color .3s;
+
         &:active {
             color: $color-primary;
         }
-    }
 
-    
+    }
 }

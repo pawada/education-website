@@ -4,7 +4,9 @@
     top: 0;
     left: 0;
     right: 0;
-
+    
+////////////////////////////////////////
+// MENU TOP - ICON AND CONTACT
 
     &__top {
         display: flex;
@@ -12,8 +14,8 @@
         align-items: center;
 
         background-color: $color-black;
+        padding: 1rem 2rem 0;
     }
-
 
     &__social-media,
     &__contact {
@@ -26,6 +28,17 @@
         &:not(:last-child) {
             margin-right: 1rem;
         }
+        .details {
+            display: none; // disable text contact details for small devices
+            
+            @include mq(very-small) {
+                display: inline-block;
+            }
+
+            @include mq(small) {
+                margin-left: .3rem;
+            }
+        }
     }
 
     &__icon {
@@ -36,17 +49,48 @@
         transition: fill 1s;
 
         &:hover {
-            fill: $color-red;
+            @include mq(super-large, min) {
+                fill: red;
+            }
+        }
+    
+        
+    }
+
+    &__contact {
+
+        @include mq(very-small) {
+            color: $color-white;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        @include mq(small) {
+            flex-direction: row;
         }
     }
 
-    &__bottom {
+    &__contact &__icon-box {
+       margin-right: 0;
+    }
 
+    &__contact &__icon {
+
+        @include mq(very-small) {
+            display: none; // disable icon and shows contact details for larger devices
+        }
+    }
+
+
+////////////////////////////////////////
+// MENU BOTTOM - LOGO AND HAMBURGER/NAVIGATION
+
+    &__bottom {
         background-color: rgba($color-black, 0.8);
-        padding: 1rem;
         display: flex;
         justify-content: space-between;
-
+        padding: 1rem 2rem;
     }
 
 }
