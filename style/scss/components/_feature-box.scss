@@ -27,7 +27,7 @@
         }
 
         &:hover {
-            @include mq(super-large, min) {
+            @include mq(very-large) {
 
                 .feature__header {
                     background-color: $color-primary;

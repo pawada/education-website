@@ -7,21 +7,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 0 1 40%;
+    margin-bottom: 3rem;
 
     @include mq(medium) {
         flex-direction: row;
+        justify-content: space-between;
+
     }
 
-    &:first-child {
-
-        @include mq(medium) {
-            margin: 0 0 3rem 0;
-        }
-
-        @include mq(very-large) {
-            margin: 0 4rem 0 0;
-        }
+    @include mq(very-large) {
+        margin-bottom: 5rem;
     }
+
 
     &__photo-box {
         width: 100%;
@@ -49,8 +47,6 @@
             margin-left: 2rem;
         }
     }
-
-
 
     & .paragraph {
         a {

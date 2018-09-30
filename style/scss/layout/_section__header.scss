@@ -6,16 +6,29 @@
         url(/img/banner-bg.jpg);
     background-size: cover;
     background-position: center;
-   
-    &__heading {
-        padding: 10rem 2rem;
+    
+    &--big {
+    padding: 20rem 10rem;
+    }
 
-        @include mq(large) {
-        max-width: 60%;
-        }  
+    display: flex;
+    flex-direction: column;
+
+    // HEADER FOR SUBPAGES
+
+    &--center > * {
+        text-align: center;
+    }
+
+    &__arrow {
+        margin: 0 1rem;
+    }
+    
+    &__links {
+        font-size: $fontsize-default;
+        color: $color-white;
+        
+        
     }
 
 }
-
-
-

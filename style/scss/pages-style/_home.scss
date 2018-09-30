@@ -1,0 +1,16 @@
+.recruitment {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(0deg, 
+    rgba($color-black-light, 0.4), 
+    rgba($color-black-light, 0.4)), 
+    url(/img/cta-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 7rem 2rem;
+    text-align: center;
+}

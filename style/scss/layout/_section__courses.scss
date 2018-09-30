@@ -21,6 +21,7 @@
     &__offer {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
  
         @include mq(large, min) {

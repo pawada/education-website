@@ -1,0 +1,29 @@
+header
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+
+        @include mq(very-large) {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        padding: 1rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+
+        &:not(:last-child) {
+            // margin-bottom: 3rem;
+        }
+    }
+
+}

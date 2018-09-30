@@ -1,19 +1,18 @@
 .events {
 
-    display: flex;
-    flex-direction: column;
-
     &__header {
         text-align: center;
-        margin: 8rem 2rem;
+        padding: 0 0 6rem 0;
     }
    
     &__container {
         display: flex;
         flex-direction: column;
-
+        justify-content: space-between;
+    
         @include mq(very-large, min) {
-            flex-direction: row;       
+            flex-direction: row;
+            flex-wrap: wrap;
         }
     }
 
