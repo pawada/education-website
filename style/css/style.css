@@ -422,7 +422,7 @@ body {
   display: flex;
   flex-direction: column; }
   .header--big {
-    padding: 20rem 10rem; }
+    padding: 20rem; }
   .header--center > * {
     text-align: center; }
   .header__arrow {
