@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "compile:sass": "node-sass style/scss/main.scss style/css/style.css -w"
+    "compile:sass": "node-sass style/scss/main.scss style/css/style.css -w"
   },
   "author": "Adam Pawlowicz",
   "license": "ISC",
   "devDependencies": {
+    "concat": "^1.0.3",
     "node-sass": "^4.9.1"
   }
 }

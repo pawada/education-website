@@ -1,0 +1,75 @@
+.map {
+    
+    &__img {
+        width: 100%;;
+    }
+
+}
+
+.contact {
+
+    background-color: $color-offwhite;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 6rem;
+
+    @include mq(medium) {
+        padding: 8rem 12rem;
+    }
+
+    @include mq(very-large) {
+        flex-direction: row;
+        align-items: center;
+        padding: 8rem 10rem;
+    }
+    
+
+    &__container {
+        margin-bottom: 3rem;
+    }
+
+    &__details {
+        display: flex;
+        align-content: center;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__icon {
+        fill: $color-primary;
+        width: 3rem;
+        height: 3rem;
+        margin-right: 3rem;
+    }
+
+    &__exact-address {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-size: $fontsize-default;
+        color: $color-black;
+        &:last-child {
+            color: $text-color;
+        }
+    }
+
+  
+    &__form {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+    }
+
+    &__form .primary-btn {
+        width: 18rem;
+        margin-top: 1rem;
+        align-self: flex-end; 
+    }
+
+
+    
+}
