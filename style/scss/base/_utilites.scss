@@ -1,13 +1,21 @@
-.u-margin-top-small {margin-top: 2rem;}
+.u-margin-top-small {
+    margin-top: 2rem;
+}
 
-.u-margin-bottom-small {margin-bottom: 2rem;}
+.u-margin-bottom-small {
+    margin-bottom: 2rem;
+}
 
-.u-margin-bottom-medium {margin-bottom: 3rem;}
+.u-margin-bottom-medium {
+    margin-bottom: 3rem;
+}
 
-.u-margin-bottom-big {margin-bottom: 4rem;}
+.u-margin-bottom-big {
+    margin-bottom: 4rem;
+}
 
 .u-section-padding {
-    
+
     padding: 10rem 2rem;
 
     @include mq(small) {
@@ -25,7 +33,7 @@
     @include mq(very-large) {
         padding: 10rem 10rem;
     }
-    
+
 }
 
 .u-section-padding-small {
@@ -48,4 +56,7 @@
     }
 }
 
-.u-text-align {text-align: center};
+.u-text-align {
+    text-align: center;
+}
+

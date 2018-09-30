@@ -2,24 +2,53 @@
 
     &__form-container {
         margin: 7rem 1rem;
-     }
- 
-     &__form:not(:last-child) {
-         margin-bottom: .6rem;
-     }
+    }
 
-     &__input {
-         font-size: 1.5rem;
-         font-family: inherit;
-         padding: 1rem;
-         width: 100%;
-         background-color: $color-white;
-         color: $text-color;
-     }
+    &__form:not(:last-child) {
+        margin-bottom: .6rem;
+    }
 
-     &__form--arrow {
-         display: flex;
-         margin: 2rem 0;
-     }
-     
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        padding: 1rem;
+        width: 100%;
+        background-color: $color-white;
+        color: $text-color;
+        outline: none;
+    }
+
+    &__form--arrow {
+        display: flex;
+        margin: 2rem 0;
+    }
+
+}
+
+// Modifications for contact.html
+
+.form-page {
+
+    display: flex;
+    flex-direction: column;
+
+    @include mq(very-large) {
+        align-items: flex-end;
+    }
+
+    &--contact {
+        @include mq(very-large) {
+            width: 70%;
+        }
+    }
+
+    &--contact:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &--contact:last-of-type>* {
+        height: 10rem;
+    }
+
 }

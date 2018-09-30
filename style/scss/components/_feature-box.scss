@@ -27,6 +27,7 @@
         }
 
         &:hover {
+            
             @include mq(very-large) {
 
                 .feature__header {

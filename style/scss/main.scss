@@ -1,6 +1,6 @@
 
-@import "utils/variables";
-@import "utils/mixins";
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "base/utilites";
 @import "base/normalize";
@@ -30,6 +30,8 @@
 @import "pages-style/about";
 @import "pages-style/courses";
 @import "pages-style/gallery";
+@import "pages-style/blog";
+@import "pages-style/contact";
 
 
 

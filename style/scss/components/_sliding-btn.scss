@@ -29,7 +29,7 @@
              overflow: hidden;
              color: $color-white;
 
-             &> ::before {
+             & > ::before {
                  content: "details";
                  text-transform: uppercase;
                  font-size: $fontsize-default;
