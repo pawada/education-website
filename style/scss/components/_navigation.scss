@@ -82,7 +82,7 @@
         &:link,
         &:visited {
             display: inline-block;
-            font-size: $fontsize-default;
+            font-size: 2rem;
             font-weight: 300;
             padding: 1rem 2rem;
             color: $color-white;
@@ -90,6 +90,9 @@
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
             background-size: 240%;
             transition: all .5s;
+            @include mq (large) {
+                font-size: $fontsize-default;
+            }
         }
 
         &:hover,

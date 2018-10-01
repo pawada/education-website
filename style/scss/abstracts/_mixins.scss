@@ -1,17 +1,17 @@
 $breakpoints: (
-    "very-small":  480px,     //60em,   //480px
-    "small":       580px,     //36.2em, //580px
-    "medium":      768px,     //48em,   //768px
-    "large":       960px,     //60em,   //960px
-    "very-large":  1000px,     //16.5em, //1000px
-    "super-large": 1200px    //75em    //120px
+    "very-small":       30em,   //480px
+    "small":            36.2em, //580px
+    "medium":           48em,   //768px
+    "large":            60em,   //960px
+    "very-large":       62.5em, //1000px
+    "super-large":      75em    //1200px
 );
 
 @mixin mq($width, $type: min) {
     @if map_has_key($breakpoints, $width) {
         $width: map_get($breakpoints, $width);
         @if $type == min {
-            $width: $width - 1px;
+            $width: $width + 0.06em;
         }
         @media only screen and (#{$type}-width: $width) {
             @content;

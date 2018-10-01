@@ -10,38 +10,38 @@
 .u-margin-bottom-big {
   margin-bottom: 4rem; }
 
+.u-text-align {
+  text-align: center; }
+
 .u-section-padding {
   padding: 10rem 2rem; }
-  @media only screen and (min-width: 579px) {
+  @media only screen and (min-width: 36.26em) {
     .u-section-padding {
       padding: 10rem 4rem; } }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 48.06em) {
     .u-section-padding {
       padding: 10rem 6rem; } }
-  @media only screen and (min-width: 959px) {
+  @media only screen and (min-width: 60.06em) {
     .u-section-padding {
       padding: 10rem 8rem; } }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .u-section-padding {
       padding: 10rem 10rem; } }
 
 .u-section-padding-small {
   padding: 4rem 2rem; }
-  @media only screen and (min-width: 579px) {
+  @media only screen and (min-width: 36.26em) {
     .u-section-padding-small {
       padding: 4rem 4rem; } }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 48.06em) {
     .u-section-padding-small {
       padding: 4rem 6rem; } }
-  @media only screen and (min-width: 959px) {
+  @media only screen and (min-width: 60.06em) {
     .u-section-padding-small {
       padding: 4rem 8rem; } }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .u-section-padding-small {
       padding: 6rem 10rem; } }
-
-.u-text-align {
-  text-align: center; }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -381,7 +381,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 2rem; }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 48.06em) {
     .heading-primary {
       font-size: 4.5rem; } }
   .heading-primary--big {
@@ -416,11 +416,25 @@ body {
     color: #fff; }
 
 .header {
-  background-image: linear-gradient(0deg, rgba(4, 9, 31, 0.8), rgba(4, 9, 31, 0.8)), url(/education-website/img/banner-bg.jpg);
+  background-image: linear-gradient(0deg, rgba(4, 9, 31, 0.8), rgba(4, 9, 31, 0.8)), url(/img/banner-bg.jpg);
   background-size: cover;
   background-position: top;
   display: flex;
   flex-direction: column; }
+  .header--small {
+    padding: 4rem 2rem; }
+  @media only screen and (min-width: 36.26em) {
+    .header--big {
+      padding: 15rem 4rem; } }
+  @media only screen and (min-width: 48.06em) {
+    .header--big {
+      padding: 15rem 6rem; } }
+  @media only screen and (min-width: 60.06em) {
+    .header--big {
+      padding: 15rem 8rem; } }
+  @media only screen and (min-width: 62.56em) {
+    .header--big {
+      padding: 20rem 10rem; } }
   .header--center > * {
     text-align: center; }
   .header__arrow {
@@ -436,7 +450,7 @@ body {
     margin: -5rem 0 8rem; }
   .courses__offer > :not(:first-child) {
     display: none; }
-    @media only screen and (min-width: 959px) {
+    @media only screen and (min-width: 60.06em) {
       .courses__offer > :not(:first-child) {
         display: flex;
         flex-direction: column; } }
@@ -445,28 +459,28 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center; }
-    @media only screen and (min-width: 959px) {
+    @media only screen and (min-width: 60.06em) {
       .courses__offer {
         display: flex;
         flex-direction: row;
         justify-content: space-between; } }
 
 .course-search {
-  background-image: linear-gradient(0deg, rgba(4, 9, 31, 0.8), rgba(4, 9, 31, 0.8)), url(/education-website/img/event-details-img.jpg);
+  background-image: linear-gradient(0deg, rgba(4, 9, 31, 0.8), rgba(4, 9, 31, 0.8)), url(/img/event-details-img.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column; }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 48.06em) {
     .course-search {
       flex-direction: row; } }
   .course-search__conteiner-details {
     display: flex;
     flex-direction: column; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .course-search__conteiner-details {
         padding: 0 15rem; } }
-    @media only screen and (min-width: 767px) {
+    @media only screen and (min-width: 48.06em) {
       .course-search__conteiner-details {
         flex: 2;
         margin-right: 2rem; } }
@@ -477,7 +491,7 @@ body {
     justify-content: space-between; }
   .course-search__offer-box {
     flex: 0 1 44%; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .course-search__offer-box:first-child {
         margin-right: 4rem; } }
   .course-search__icon {
@@ -497,7 +511,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .events__container {
       flex-direction: row;
       flex-wrap: wrap; } }
@@ -506,7 +520,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f9f9ff; }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 48.06em) {
     .review {
       flex-direction: row; } }
   .review__content-box:first-child {
@@ -527,13 +541,13 @@ body {
   flex-direction: column; }
   .blog__header {
     text-align: center; }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 48.06em) {
     .blog__container {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between; } }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .blog__container {
       flex-wrap: nowrap; } }
 
@@ -542,14 +556,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(0deg, rgba(41, 38, 38, 0.4), rgba(41, 38, 38, 0.4)), url(/education-website/img/cta-bg.jpg);
+  background-image: linear-gradient(0deg, rgba(41, 38, 38, 0.4), rgba(41, 38, 38, 0.4)), url(/img/cta-bg.jpg);
   background-position: center;
   background-size: cover;
   padding: 12rem 4rem;
   text-align: center; }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .recruitment {
-      padding: 14rem 18rem; } }
+      padding: 14rem 25rem; } }
 
 .view-blog {
   background-color: #f7631b;
@@ -562,17 +576,17 @@ body {
   background-color: #04091f;
   display: flex;
   flex-direction: column; }
-  @media only screen and (min-width: 579px) {
+  @media only screen and (min-width: 36.26em) {
     .footer__link-container {
       display: flex;
       flex-wrap: wrap; } }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .footer__link-container {
       flex-wrap: nowrap; } }
   .footer__link-column {
     display: flex;
     flex-direction: column; }
-    @media only screen and (min-width: 579px) {
+    @media only screen and (min-width: 36.26em) {
       .footer__link-column {
         flex: 0 1 40%;
         margin-bottom: 3rem; } }
@@ -582,7 +596,7 @@ body {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
     transition: color .3s; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .footer__link:hover {
         color: #f7631b; } }
   .footer__copy-media .paragraph .footer__copy-link {
@@ -590,7 +604,7 @@ body {
   .footer__copy-media {
     display: flex;
     flex-direction: column; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .footer__copy-media {
         flex-direction: row;
         justify-content: space-between; } }
@@ -600,7 +614,7 @@ body {
     height: 2rem;
     margin-right: 1.5rem;
     transition: fill .4s; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .footer__icon:hover {
         fill: #f7631b; } }
 
@@ -625,10 +639,10 @@ body {
       margin-right: 1rem; }
     .menu__icon-box .details {
       display: none; }
-      @media only screen and (min-width: 479px) {
+      @media only screen and (min-width: 30.06em) {
         .menu__icon-box .details {
           display: inline-block; } }
-      @media only screen and (min-width: 579px) {
+      @media only screen and (min-width: 36.26em) {
         .menu__icon-box .details {
           margin-left: .3rem; } }
   .menu__icon {
@@ -637,21 +651,21 @@ body {
     fill: #fff;
     cursor: pointer;
     transition: fill 1s; }
-    @media only screen and (min-width: 1199px) {
+    @media only screen and (min-width: 75.06em) {
       .menu__icon:hover {
         fill: red; } }
-  @media only screen and (min-width: 479px) {
+  @media only screen and (min-width: 30.06em) {
     .menu__contact {
       color: #fff;
       display: flex;
       flex-direction: column;
       align-items: flex-end; } }
-  @media only screen and (min-width: 579px) {
+  @media only screen and (min-width: 36.26em) {
     .menu__contact {
       flex-direction: row; } }
   .menu__contact .menu__icon-box {
     margin-right: 0; }
-  @media only screen and (min-width: 479px) {
+  @media only screen and (min-width: 30.06em) {
     .menu__contact .menu__icon {
       display: none; } }
   .menu__bottom {
@@ -686,7 +700,7 @@ body {
     outline: none; }
   .navigation__hamburger:focus::after {
     transform: rotate(-90deg) translateX(-0.6rem); }
-  @media only screen and (min-width: 959px) {
+  @media only screen and (min-width: 60.06em) {
     .navigation__hamburger {
       display: none; } }
 
@@ -703,7 +717,7 @@ body {
   background-color: rgba(4, 9, 31, 0.8);
   transform: translateX(100%);
   transition: .3s transform ease-in-out; }
-  @media only screen and (min-width: 959px) {
+  @media only screen and (min-width: 60.06em) {
     .navigation__site-menu {
       position: static;
       height: auto;
@@ -716,7 +730,7 @@ body {
   margin: 0 1rem;
   display: flex;
   flex-direction: column; }
-  @media only screen and (min-width: 959px) {
+  @media only screen and (min-width: 60.06em) {
     .navigation__list {
       flex-direction: row;
       align-content: center;
@@ -724,7 +738,7 @@ body {
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 300;
   padding: 1rem 2rem;
   color: #fff;
@@ -732,6 +746,9 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 240%;
   transition: all .5s; }
+  @media only screen and (min-width: 60.06em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 1.4rem; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -754,7 +771,7 @@ body {
   cursor: pointer;
   border: 2px solid transparent; }
 
-@media only screen and (min-width: 999px) {
+@media only screen and (min-width: 62.56em) {
   .primary-btn:hover {
     background-color: #fff;
     color: #f7631b; } }
@@ -776,7 +793,7 @@ body {
   font-size: 2rem;
   padding: .5rem 1.5rem; }
 
-@media only screen and (min-width: 999px) {
+@media only screen and (min-width: 62.56em) {
   .primary-btn--black:hover {
     background-color: #292626;
     color: #fff;
@@ -792,7 +809,7 @@ body {
     margin: -16rem 0 -15rem;
     display: flex;
     flex-direction: column; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .feature__container {
         flex-direction: row; } }
   .feature__single {
@@ -801,10 +818,10 @@ body {
     align-items: center;
     margin-bottom: 3rem;
     transition: color 3s; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .feature__single:not(:last-child) {
         margin-right: 6rem; } }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .feature__single:hover .feature__header {
         background-color: #f7631b; }
       .feature__single:hover .feature__link {
@@ -815,7 +832,7 @@ body {
     background-color: #f7631b;
     color: #fff;
     transition: background-color .3s; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .feature__header {
         background-color: rgba(255, 255, 255, 0.2); } }
   .feature__content {
@@ -850,7 +867,7 @@ body {
     width: 100%;
     height: 100%;
     transition: all .3s; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .courses-box__img:hover {
         transform: scale(1.1); } }
   .courses-box__icons-price {
@@ -882,11 +899,11 @@ body {
   align-items: center;
   flex: 0 1 40%;
   margin-bottom: 3rem; }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 48.06em) {
     .event-blog {
       flex-direction: row;
       justify-content: space-between; } }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .event-blog {
       margin-bottom: 5rem; } }
   .event-blog__photo-box {
@@ -895,29 +912,29 @@ body {
   .event-blog__photo {
     width: 100%;
     transition: transform .3s; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .event-blog__photo:hover {
         transform: rotate(-1deg) scale(1.1); } }
   .event-blog__contents {
     align-self: center;
     max-height: 100%;
     flex: 1; }
-    @media only screen and (min-width: 767px) {
+    @media only screen and (min-width: 48.06em) {
       .event-blog__contents {
         margin-left: 2rem; } }
   .event-blog .paragraph a {
     margin-left: 0.6rem; }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 48.06em) {
     .event-blog--column {
       flex-direction: column;
       flex: 0 1 22%;
       margin-bottom: 3rem; } }
   .event-blog--column:not(:first-child) {
     display: none; }
-    @media only screen and (min-width: 767px) {
+    @media only screen and (min-width: 48.06em) {
       .event-blog--column:not(:first-child) {
         display: flex; } }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 48.06em) {
     .event-blog--column:first-child {
       margin: 0 0 3rem 0; } }
   .event-blog--column {
@@ -927,7 +944,7 @@ body {
   .event-blog--column .event-blog__photo-box {
     margin-bottom: 1rem;
     overflow: hidden; }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .event-blog--column:hover .event-blog__photo {
       transform: scale(1.1); }
     .event-blog--column:hover .heading-tertialy {
@@ -955,10 +972,10 @@ body {
 .form-page {
   display: flex;
   flex-direction: column; }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .form-page {
       align-items: flex-end; } }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .form-page--contact {
       width: 70%; } }
   .form-page--contact:not(:last-child) {
@@ -984,7 +1001,7 @@ body {
   .sliding-btn:active {
     background-color: #f7631b;
     color: #fff; }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .sliding-btn:hover {
       background-color: #f7631b;
       width: 15rem;
@@ -997,22 +1014,11 @@ body {
         font-size: 1.4rem;
         margin-right: 1rem; } }
 
-.recruitment {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(0deg, rgba(41, 38, 38, 0.4), rgba(41, 38, 38, 0.4)), url(/education-website/img/cta-bg.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 7rem 2rem;
-  text-align: center; }
-
 .info {
   padding: 10rem 0 5rem 0;
   display: flex;
   flex-direction: column; }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .info {
       flex-direction: row;
       align-items: center; } }
@@ -1028,19 +1034,19 @@ body {
 
 .mission {
   padding: 10rem 2rem; }
-  @media only screen and (min-width: 579px) {
+  @media only screen and (min-width: 36.26em) {
     .mission {
       padding: 10rem 8rem; } }
   .mission__container {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    @media only screen and (min-width: 767px) {
+    @media only screen and (min-width: 48.06em) {
       .mission__container {
         flex-direction: row; } }
   .mission__content {
     flex: 1; }
-    @media only screen and (min-width: 767px) {
+    @media only screen and (min-width: 48.06em) {
       .mission__content {
         margin-right: 3rem; } }
   .mission__section-title {
@@ -1069,7 +1075,7 @@ body {
   .gallery__row {
     display: flex;
     flex-direction: column; }
-    @media only screen and (min-width: 999px) {
+    @media only screen and (min-width: 62.56em) {
       .gallery__row {
         flex-direction: row; } }
   .gallery__item {
@@ -1092,10 +1098,10 @@ body {
   display: flex;
   flex-direction: column;
   padding: 5rem 6rem; }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 48.06em) {
     .contact {
       padding: 8rem 12rem; } }
-  @media only screen and (min-width: 999px) {
+  @media only screen and (min-width: 62.56em) {
     .contact {
       flex-direction: row;
       align-items: center;
